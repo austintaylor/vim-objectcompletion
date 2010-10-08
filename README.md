@@ -11,13 +11,14 @@ It seems to work reasonably well, but I would consider it an experiment at this
 point.
 
 The commands are:
-- Ctrl+X 0 for completing ``()``
-- Ctrl+X [ for completing ``{}``
-- Ctrl+X ' for completing ``''`` or ``""``
+
+- ``Ctrl+X 0`` for completing ``()``
+- ``Ctrl+X [`` for completing ``{}``
+- ``Ctrl+X '`` for completing ``''`` or ``""``
 
 Again, it only completes from the current buffer. I would love to have it pull
-from all open buffers the way Ctrl-X Ctrl-L and Ctrl-N do, but I think that
-would be a performance concern. The parsing is currently done using Vim regexs.
+from all open buffers the way ``Ctrl-X Ctrl-L`` and ``Ctrl-N`` do, but I think that
+would be a performance concern. The parsing is currently done using Vim regexps.
 
 The other major limitation is that it currently gets confused by nested ``()``
 and ``{}``, and strings containing escaped quotes. These do not prevent the
